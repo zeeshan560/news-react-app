@@ -17,7 +17,7 @@ export class News extends Component {
     async componentDidMount(){
         // console.log("cdm");
         this.setState({loading: true});
-        let url = `http://localhost:3008/news-react-app/news.json`;
+        let url = `https://zeeshan560.github.io/news-react-app/news.json`;
         let data = await fetch(url);
         let parseData = await data.json()
         // console.log(parseData);
