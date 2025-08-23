@@ -17,7 +17,6 @@ export class News extends Component {
     async componentDidMount(){
         // console.log("cdm");
         this.setState({loading: true});
-        // let url = `https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=d5771a38db96452ba33458561d31ed29&page=1&pageSize=${this.props.pageSize}`;
         let url = `https://zeeshan560.github.io/news-react-app/news.json`;
         let data = await fetch(url);
         let parseData = await data.json()
@@ -27,7 +26,6 @@ export class News extends Component {
 
     handlePrevClick = async ()=>{
         this.setState({loading: true});
-        // let url = `https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=d5771a38db96452ba33458561d31ed29&page=${this.state.page-1}&pageSize=${this.props.pageSize}`;
         let url = `https://zeeshan560.github.io/news-react-app/news.json`;
         let data = await fetch(url);
         let parseData = await data.json()
@@ -45,7 +43,6 @@ export class News extends Component {
 
         } else {
             this.setState({loading: true});
-            // let url = `https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=d5771a38db96452ba33458561d31ed29&page=${this.state.page+1}&pageSize=${this.props.pageSize}`;
             let url = `https://zeeshan560.github.io/news-react-app/news.json`;
             let data = await fetch(url);
             let parseData = await data.json()
