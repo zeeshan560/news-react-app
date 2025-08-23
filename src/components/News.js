@@ -43,7 +43,7 @@ export class News extends Component {
 
         } else {
             this.setState({loading: true});
-            let url = `https://zeeshan560.github.io/news-react-app/news.json`;
+            let url = `https://zeeshan560.github.io/news-react-app/news1.json`;
             let data = await fetch(url);
             let parseData = await data.json()
             // console.log(parseData);
